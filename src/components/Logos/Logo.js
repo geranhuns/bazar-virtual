@@ -1,5 +1,5 @@
-export default function Logo() {
+export default function Logo({ width, heigth }) {
   return (
-    <img src="/bazarVirtualLogo.png" width="100" heigth="100" alt="logo" />
+    <img src="/bazarVirtualLogo.png" width={width} heigth={heigth} alt="logo" />
   );
 }

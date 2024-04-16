@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
+import Logo from "@/components/Logos/Logo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="flex items-center justify-center">
+          <Logo width="300" heigth="300" />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
