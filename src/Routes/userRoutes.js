@@ -19,6 +19,7 @@ router.post('/',async (req, res)=>{
     try {
         const user = await userSchema.create(userData)
          await user.save()
+         res.status(200).send({msg:'user created'})
         
          
      } catch (error) {
