@@ -1,10 +1,10 @@
-import Logo from "../Logos/Logo";
+import LogoTag from "../Logos/LogoTag";
 export default function Footer() {
   return (
     <footer className="text-center absolute bottom-0 w-full bg-gray-100">
       <div className="footer-content">
         <div className="footer-logo flex justify-center">
-          <Logo width="100" />
+          <LogoTag width="100" />
         </div>
 
         <div className="footer-links">
