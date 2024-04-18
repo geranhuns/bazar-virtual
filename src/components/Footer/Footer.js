@@ -1,7 +1,7 @@
 import LogoTag from "../Logos/LogoTag";
 export default function Footer() {
   return (
-    <footer className="text-center absolute bottom-0 w-full bg-gray-100">
+    <footer className="text-center absolute bottom-0 w-full bg-gray-100 pb-10 pt-3">
       <div className="footer-content">
         <div className="footer-logo flex justify-center">
           <LogoTag width="100" />
