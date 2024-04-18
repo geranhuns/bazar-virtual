@@ -1,7 +1,10 @@
 "use client";
 
+import Button from "../Button/button";
 import LogoH from "../Logos/LogoH";
-import DropdownSearchFilter from "./DropdownSearchFilter";
+import Dropdown from "../Dropdown/Dropdown";
+
+const options = ["Todos", "Bazares", "Marcas", "Productos"];
 
 function Header() {
   return (
@@ -10,19 +13,14 @@ function Header() {
         <div className="h-full flex justify-between items-center mx-auto   lg:max-w-7xl px-5">
           <LogoH />
           <div className="flex items-center  w-4/12 gap-0">
-            <DropdownSearchFilter />
+            <Dropdown options={options} />
             <input
               type="text"
               className=" w-full p-1 rounded-lg "
               placeholder="Buscar..."
             />
           </div>
-          <button
-            href="/login"
-            className="mr-4 bg-white p-1 rounded-lg text-lg text-gray-800 font-medium"
-          >
-            <a href="/login">Iniciar sesion</a>
-          </button>
+          <Button text="Iniciar sesión" href="/login" variant="beige" />
         </div>
       </nav>
     </>
