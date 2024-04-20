@@ -21,7 +21,7 @@ const userEsquema = new mongooselib.Schema({
       },
       role: {
         type: String,
-        enum: ['admin', 'user','seller'], // Se especifica que el campo 'role' solo puede tener los valores 'admin' o 'user'
+        enum: ['user','seller'], // Se especifica que el campo 'role' solo puede tener los valores 'admin' o 'user'
         default: 'user' // Valor por defecto si no se proporciona uno
       }
 })
