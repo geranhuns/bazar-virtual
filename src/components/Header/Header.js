@@ -5,7 +5,32 @@ import LogoH from "../Logos/LogoH";
 import Dropdown from "../Dropdown/Dropdown";
 import { useRouter } from "next/navigation";
 
-const options = ["Todos", "Bazares", "Marcas", "Productos"];
+const options = [
+  "Todo",
+  "Alimentos y Bebidas",
+  "Auto",
+  "Bebé",
+  "Belleza",
+  "Deportes y Aire Libre",
+  "Electrónicos",
+  "Hecho a mano",
+  "Herramientas y Mejoras del Hogar",
+  "Hogar y Cocina",
+  "Industria y Ciencia",
+  "Instrumentos Musicales",
+  "Jardín",
+  "Juegos y juguetes",
+  "Libros",
+  "Mascotas",
+  "Música",
+  "Oficina y Papelería",
+  "Otros productos",
+  "Películas y Series de TV",
+  "Ropa, Zapatos y Accesorios",
+  "Salud y Cuidado Personal",
+  "Software",
+  "Videojuegos",
+];
 
 function Header() {
   const router = useRouter();
@@ -26,8 +51,10 @@ function Header() {
               />
             </div>
           )}
-
-          <Button text="Iniciar sesión" href="/login" variant="beige" />
+          <div className="flex gap-4">
+            <Button text="Iniciar sesión" href="/login" variant="beige" />
+            <Button text="Registro" href="/register" variant="beige" />
+          </div>
         </div>
       </nav>
     </>

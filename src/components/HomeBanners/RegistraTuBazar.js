@@ -50,7 +50,7 @@ export default function RegistraTuBazar({ className }) {
       </div> */}
 
       <div className="flex flex-col pt-10 px-8 absolute top-0 left-0">
-        <div className="self-center">
+        <div className="self-center0">
           <h3>Próximos Bazares</h3>
           <Dropdown options={estadosDeMexico} />
         </div>
@@ -66,12 +66,12 @@ export default function RegistraTuBazar({ className }) {
           </li>
         </ul>
         <Button text={"Ver todos"} href={"/bazares"} variant={"yellow"} />
-        <div className="bg-yellow-bazar py-2 px-6 mt-10">
+        {/* <div className="bg-yellow-bazar py-2 px-4 mt-10">
           <p>
             ¡<a href="/register">Registra</a> tu bazar e invítanos a comprar con
             tus marcas invitadas!
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
