@@ -7,7 +7,7 @@ export default function Dropdown({ options }) {
     setSelectedOption(e.target.value);
   };
   return (
-    <div>
+    <div className="w-20 h-auto">
       <label htmlFor="dropdown"></label>
       <select id="dropdown" value={selectedOption} onChange={handleDropdown}>
         {options.map((option, index) => (

@@ -10,16 +10,16 @@ export default function Footer() {
         <div className="footer-links px-6">
           <ul className="flex  flex-wrap justify-center gap-6 list-disc">
             <li>
-              <a href="#">Acerca de nosotros</a>
+              <a href="/bazares">Nuestros Bazares</a>
             </li>
             <li>
-              <a href="#">Nuestros bazares</a>
+              <a href="/marcas">Marcas Asociadas</a>
             </li>
             <li>
-              <a href="#">Marcas asociadas</a>
+              <a href="/register">Registra tu Bazar</a>
             </li>
             <li>
-              <a href="#">Contáctanos</a>
+              <a href="/register">Registra tu Marca</a>
             </li>
           </ul>
         </div>

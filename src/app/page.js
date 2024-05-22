@@ -3,7 +3,14 @@ import ProductSmallView from "@/components/SmallViews/ProductSmallView";
 export default function Home() {
   return (
     <main className="flex mt-16  mx-auto  lg:max-w-7xl overflow-auto">
-      <div className="w-10/12 grid grid-rows-2 grid-flow-col gap-4 py-10 px-20">
+      <div className="w-10/12 grid grid-cols-4 gap-4 py-10 px-20">
+        <ProductSmallView />
+        <ProductSmallView />
+        <ProductSmallView />
+        <ProductSmallView />
+        <ProductSmallView />
+        <ProductSmallView />
+        <ProductSmallView />
         <ProductSmallView />
         <ProductSmallView />
         <ProductSmallView />
@@ -11,7 +18,7 @@ export default function Home() {
         <ProductSmallView />
         <ProductSmallView />
       </div>
-      <RegistraTuBazar className="relative flex justify-center " />
+      <RegistraTuBazar className="w-1/6 relative flex justify-center " />
     </main>
   );
 }
