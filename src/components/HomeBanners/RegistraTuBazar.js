@@ -1,6 +1,6 @@
 "use client";
 import Dropdown from "../Dropdown/Dropdown";
-import Image from "next/image";
+import BazarSmallView from "../SmallViews/BazarSmallView";
 import Button from "../Button/button";
 const estadosDeMexico = [
   "Aguascalientes",
@@ -37,9 +37,9 @@ const estadosDeMexico = [
   "Zacatecas",
 ];
 
-export default function RegistraTuBazar() {
+export default function RegistraTuBazar({ className }) {
   return (
-    <div className="relative flex justify-center ">
+    <div className={className}>
       {/* <div className="h-5/6 pb-16 ">
         <Image
           src="/temporaryImages/bazarpic.jpg"
@@ -55,9 +55,15 @@ export default function RegistraTuBazar() {
           <Dropdown options={estadosDeMexico} />
         </div>
         <ul className="pt-8">
-          <li>Morena Bazar - 10 jun</li>
-          <li>Mil Cosas Bazar - 17 jun</li>
-          <li>Bazar Manos Mexicanas - 24 jun</li>
+          <li>
+            <BazarSmallView />
+          </li>
+          <li>
+            <BazarSmallView />
+          </li>
+          <li>
+            <BazarSmallView />
+          </li>
         </ul>
         <Button text={"Ver todos"} href={"/bazares"} variant={"yellow"} />
         <div className="bg-yellow-bazar py-2 px-6 mt-10">
