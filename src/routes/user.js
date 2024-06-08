@@ -1,16 +1,19 @@
+import { isAdmin, validateToken } from "@/middlewares/auth";
+import { all } from "@/use_cases/user";
 //all users
-router.get(req, res, () => {
-  return res.json({});
+router.get("/", (req, res) => {
+  const data = all();
+  return res.json(data);
 });
 
 //one user
-router.get(req, res, () => {});
+router.get("/:id", req, res, () => {});
 //create user
-router.post(req, res, () => {});
+router.post("/", req, res, () => {});
 //update user
-router.put(req, res, () => {});
-router.patch(req, res, () => {});
+router.put("/:id", req, res, () => {});
+router.patch("/:id", req, res, () => {});
 //delete user
-router.delete(req, res, () => {});
+router.delete("/:id", req, res, () => {});
 
 module.exports = router;
