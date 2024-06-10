@@ -9,7 +9,7 @@ export default function BazarSmallView() {
         alt="logo"
       />
       <h3>10 - Jun</h3>
-      <h3> 10:00 - 18:00 hrs</h3>
+      <h3> 10 - 18 hrs</h3>
     </div>
   );
 }

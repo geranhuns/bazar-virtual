@@ -37,7 +37,7 @@ function Header() {
   const { pathname } = router;
   return (
     <>
-      <nav className="bg-gray-800 fixed h-16  left-0 right-0 top-0 shadow-md">
+      <nav className="bg-gray-800 sticky h-16  left-0 right-0 top-0 shadow-md">
         <div className="h-full flex justify-between items-center mx-auto   lg:max-w-7xl px-5">
           <LogoH />
 
@@ -52,8 +52,8 @@ function Header() {
             </div>
           )}
           <div className="flex gap-4">
-            <Button text="Iniciar sesión" href="/login" variant="beige" />
-            <Button text="Registro" href="/register" variant="beige" />
+            <Button text="Iniciar sesión" href="/login" variant="transparent" />
+            <Button text="Crear cuenta" href="/register" variant="yellow" />
           </div>
         </div>
       </nav>
