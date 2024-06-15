@@ -27,15 +27,17 @@ export const metadata = {
     "bazares mexicanos",
   ],
   publisher: "Bazar Virtual Consume Local",
-  referrer: "origin-when-cross-oringin",
+  referrer: "origin-when-crossorigin",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className="flex flex-col h-full">
-      <Header />
-      <body className={inter.className}>{children}</body>
-      <Footer />
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
